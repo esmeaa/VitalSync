@@ -20,8 +20,12 @@
         /* Move to the right outside the screen */
     }
 }
+html{
+    background-color: #232323;
+}
 
 /* Image styles */
+
 #vsPurple {
     display: block;
     width: 400px;
