@@ -1,0 +1,21 @@
+extends layout
+block content
+    h2 Welcome #{title}
+    #quizPage(style='border:solid')
+        p#question
+        input#a.answer(type="radio" name="answer")
+        label#choice1Label(for="a")
+        br
+        input#b.answer(type ="radio" name ="answer")
+        label#choice2Label(for="b")
+        br
+        input#c.answer(type ="radio" name ="answer")
+        label#choice3Label(for="c")
+        br
+        input#d.answer(type ="radio" name ="answer")
+        label#choice4Label(for="d")
+        br
+        button#submit(type="button" name="submit") Submit
+    #result(style='display:block')
+        p Result: In Progress
+    script(src='/javascripts/quiz.js')
